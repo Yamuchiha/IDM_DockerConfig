@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/DockerConfig/src-gen" creationIcons="false" editDirectory="/DockerConfig.edit/src-gen"
+    editorDirectory="/DockerConfig.editor/src-gen" modelPluginID="DockerConfig" modelName="DockerConfig"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="22.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>dockerConfig.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="DockerConfig" disposableProviderFactory="true" ecorePackage="dockerConfig.ecore#/">
+    <genClasses ecoreClass="dockerConfig.ecore#//Service">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerConfig.ecore#//Service/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerConfig.ecore#//Service/image"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerConfig.ecore#//Service/ports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerConfig.ecore#//Service/volumes"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerConfig.ecore#//Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerConfig.ecore#//Port/hostPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerConfig.ecore#//Port/containerPort"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerConfig.ecore#//Volume">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerConfig.ecore#//Volume/hostPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerConfig.ecore#//Volume/containerPath"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
